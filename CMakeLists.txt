@@ -7,17 +7,15 @@ set(CMAKE_CUDA_STANDARD 14)
 set(CMAKE_CUDA_STANDARD_REQUIRED ON)
 
 file(GLOB_RECURSE LIB_SOURCES
-  "${PROJECT_SOURCE_DIR}/Conductor/src/*.cpp"
-  "${PROJECT_SOURCE_DIR}/Conductor/src/*.cu"
+  "${CMAKE_SOURCE_DIR}/Conductor/src/*.cpp"
+  "${CMAKE_SOURCE_DIR}/Conductor/src/*.cu"
 )
 
 add_library(Conductor ${LIB_SOURCES})
-target_include_directories(Conductor PUBLIC ${PROJECT_SOURCE_DIR}/Conductor/include)
+target_include_directories(Conductor PUBLIC ${CMAKE_SOURCE_DIR}/Conductor/include)
 
+add_executable(ConductorExec Conductor/src/main.cu)
+add_executable(SGEMM_PERF profiling/profiling_sgemm.cu)
 
-add_executable(Conductor src/main.cpp)
-target_link_libraries(Conductor PRIVATE Conductor)
-
-enable_testing()
-add_subdirectory(tests)
-
+target_link_libraries(ConductorExec PRIVATE Conductor)
+target_link_libraries(SGEMM_PERF PRIVATE Conductor)
