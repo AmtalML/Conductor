@@ -31,3 +31,8 @@
 // Ceiling Division Macro
 #define CEIL_DIV(M, N) (((M) + (N) - 1) / (N))
 
+#define cudaCheck(err) (cudaCheck(err, __FILE__, __LINE__))
+
+void randomize_matrix() {
+    
+}
