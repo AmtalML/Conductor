@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o"
+  "CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o.d"
   "CMakeFiles/Conductor.dir/Conductor/src/main.cu.o"
   "CMakeFiles/Conductor.dir/Conductor/src/main.cu.o.d"
   "CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o"

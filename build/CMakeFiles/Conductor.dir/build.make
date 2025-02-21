@@ -69,10 +69,24 @@ include CMakeFiles/Conductor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Conductor.dir/flags.make
 
+CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o: CMakeFiles/Conductor.dir/flags.make
+CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o: ../Conductor/src/flash_attention.cu
+CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o: CMakeFiles/Conductor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o -MF CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o.d -x cu -c /home/ec2-user/Conductor/Conductor/src/flash_attention.cu -o CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o
+
+CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/Conductor.dir/Conductor/src/main.cu.o: CMakeFiles/Conductor.dir/flags.make
 CMakeFiles/Conductor.dir/Conductor/src/main.cu.o: ../Conductor/src/main.cu
 CMakeFiles/Conductor.dir/Conductor/src/main.cu.o: CMakeFiles/Conductor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object CMakeFiles/Conductor.dir/Conductor/src/main.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/Conductor.dir/Conductor/src/main.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/Conductor.dir/Conductor/src/main.cu.o -MF CMakeFiles/Conductor.dir/Conductor/src/main.cu.o.d -x cu -c /home/ec2-user/Conductor/Conductor/src/main.cu -o CMakeFiles/Conductor.dir/Conductor/src/main.cu.o
 
 CMakeFiles/Conductor.dir/Conductor/src/main.cu.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/Conductor.dir/Conductor/src/main.cu.s: cmake_force
 CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o: CMakeFiles/Conductor.dir/flags.make
 CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o: ../Conductor/src/sgemm.cu
 CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o: CMakeFiles/Conductor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o -MF CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o.d -x cu -c /home/ec2-user/Conductor/Conductor/src/sgemm.cu -o CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o
 
 CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.i: cmake_force
@@ -99,17 +113,19 @@ CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.s: cmake_force
 
 # Object files for target Conductor
 Conductor_OBJECTS = \
+"CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o" \
 "CMakeFiles/Conductor.dir/Conductor/src/main.cu.o" \
 "CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o"
 
 # External object files for target Conductor
 Conductor_EXTERNAL_OBJECTS =
 
+libConductor.a: CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o
 libConductor.a: CMakeFiles/Conductor.dir/Conductor/src/main.cu.o
 libConductor.a: CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o
 libConductor.a: CMakeFiles/Conductor.dir/build.make
 libConductor.a: CMakeFiles/Conductor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA static library libConductor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ec2-user/Conductor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CUDA static library libConductor.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/Conductor.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Conductor.dir/link.txt --verbose=$(VERBOSE)
 

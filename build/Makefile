@@ -155,6 +155,30 @@ SGEMM_PERF/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SGEMM_PERF.dir/build.make CMakeFiles/SGEMM_PERF.dir/build
 .PHONY : SGEMM_PERF/fast
 
+Conductor/src/flash_attention.o: Conductor/src/flash_attention.cu.o
+.PHONY : Conductor/src/flash_attention.o
+
+# target to build an object file
+Conductor/src/flash_attention.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conductor.dir/build.make CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o
+.PHONY : Conductor/src/flash_attention.cu.o
+
+Conductor/src/flash_attention.i: Conductor/src/flash_attention.cu.i
+.PHONY : Conductor/src/flash_attention.i
+
+# target to preprocess a source file
+Conductor/src/flash_attention.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conductor.dir/build.make CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.i
+.PHONY : Conductor/src/flash_attention.cu.i
+
+Conductor/src/flash_attention.s: Conductor/src/flash_attention.cu.s
+.PHONY : Conductor/src/flash_attention.s
+
+# target to generate assembly for a file
+Conductor/src/flash_attention.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conductor.dir/build.make CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.s
+.PHONY : Conductor/src/flash_attention.cu.s
+
 Conductor/src/main.o: Conductor/src/main.cu.o
 .PHONY : Conductor/src/main.o
 
@@ -241,6 +265,9 @@ help:
 	@echo "... Conductor"
 	@echo "... ConductorExec"
 	@echo "... SGEMM_PERF"
+	@echo "... Conductor/src/flash_attention.o"
+	@echo "... Conductor/src/flash_attention.i"
+	@echo "... Conductor/src/flash_attention.s"
 	@echo "... Conductor/src/main.o"
 	@echo "... Conductor/src/main.i"
 	@echo "... Conductor/src/main.s"

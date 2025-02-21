@@ -6,5 +6,5 @@ CUDA_DEFINES =
 
 CUDA_INCLUDES = -I/home/ec2-user/Conductor/Conductor/include
 
-CUDA_FLAGS =  --generate-code=arch=compute_52,code=[compute_52,sm_52] -std=c++14
+CUDA_FLAGS =  --generate-code=arch=compute_70,code=[compute_70,sm_70] --generate-code=arch=compute_75,code=[compute_75,sm_75] --generate-code=arch=compute_80,code=[compute_80,sm_80] --generate-code=arch=compute_86,code=[compute_86,sm_86] -std=c++14
 
