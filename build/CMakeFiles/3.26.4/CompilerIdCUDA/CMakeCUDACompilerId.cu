@@ -173,6 +173,9 @@ char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
 #  define PLATFORM_ID "Integrity"
 # endif
 
+# elif defined(_ADI_COMPILER)
+#  define PLATFORM_ID "ADSP"
+
 #else /* unknown platform */
 # define PLATFORM_ID
 
@@ -301,6 +304,36 @@ char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
 #  define ARCHITECTURE_ID ""
 # endif
 
+# elif defined(__ADSPSHARC__)
+#  define ARCHITECTURE_ID "SHARC"
+
+# elif defined(__ADSPBLACKFIN__)
+#  define ARCHITECTURE_ID "Blackfin"
+
+#elif defined(__TASKING__)
+
+# if defined(__CTC__) || defined(__CPTC__)
+#  define ARCHITECTURE_ID "TriCore"
+
+# elif defined(__CMCS__)
+#  define ARCHITECTURE_ID "MCS"
+
+# elif defined(__CARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__CARC__)
+#  define ARCHITECTURE_ID "ARC"
+
+# elif defined(__C51__)
+#  define ARCHITECTURE_ID "8051"
+
+# elif defined(__CPCP__)
+#  define ARCHITECTURE_ID "PCP"
+
+# else
+#  define ARCHITECTURE_ID ""
+# endif
+
 #else
 #  define ARCHITECTURE_ID
 #endif
@@ -404,9 +437,8 @@ const char* info_language_standard_default = "INFO" ":" "standard_default["
 "]";
 
 const char* info_language_extensions_default = "INFO" ":" "extensions_default["
-/* !defined(_MSC_VER) to exclude Clang's MSVC compatibility mode. */
-#if (defined(__clang__) || defined(__GNUC__)) && !defined(__STRICT_ANSI__) && \
-  !defined(_MSC_VER)
+#if (defined(__clang__) || defined(__GNUC__)) &&                              \
+  !defined(__STRICT_ANSI__)
   "ON"
 #else
   "OFF"

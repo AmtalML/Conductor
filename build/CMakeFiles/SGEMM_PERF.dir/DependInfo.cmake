@@ -11,9 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ec2-user/Conductor/profiling/profiling_sgemm.cu" "CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o" "gcc" "CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ec2-user/Conductor/build/CMakeFiles/Conductor.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

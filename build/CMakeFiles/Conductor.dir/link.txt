@@ -1,2 +1,2 @@
-/usr/bin/ar qc libConductor.a CMakeFiles/Conductor.dir/Conductor/src/flash_attention.cu.o CMakeFiles/Conductor.dir/Conductor/src/main.cu.o CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o
+/usr/bin/ar qc libConductor.a CMakeFiles/Conductor.dir/Conductor/src/main.cu.o CMakeFiles/Conductor.dir/Conductor/src/sgemm.cu.o
 /usr/bin/ranlib libConductor.a

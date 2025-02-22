@@ -16,6 +16,7 @@
 #include <cassert>
 #include <unistd.h>
 
+typedef __nv_bfloat16 bf16;
 
 // Error checking Macro
 #define CHECK_CUDA(call)                                            \
@@ -32,7 +33,3 @@
 #define CEIL_DIV(M, N) (((M) + (N) - 1) / (N))
 
 #define cudaCheck(err) (cudaCheck(err, __FILE__, __LINE__))
-
-void randomize_matrix() {
-    
-}
