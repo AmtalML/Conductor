@@ -45,30 +45,32 @@ int main() {
         exit(1);
     }
 
-    int N = 1 << 10;
-    int M = N, K = N;
-    float alpha = 1.0f, beta = 0.0f;
+    float alpha = 1.0f, beta = 4.2f;
 
-    bf16 *host_a = (bf16 *)malloc(sizeof(bf16) * N * N);
-    bf16 *host_b = (bf16 *)malloc(sizeof(bf16) * N * N);
-    bf16 *host_c = (bf16 *)malloc(sizeof(bf16) * N * N);
-    bf16 *copy_host_c = (bf16 *)malloc(sizeof(bf16) * N * N);
+    std::vector<int> sizes = {128, 256, 512, 1024, 2048, 4096};
 
-    Amtal::randomize_matrix(host_a, N * N);
-    Amtal::randomize_matrix(host_b, N * N);
-    memset(host_c, 0, sizeof(bf16) * N * N);
-    memset(copy_host_c, 0, sizeof(bf16) * N * N);
+    int max_size = sizes[sizes.size() - 1];
+
+    bf16 *host_a = (bf16 *)malloc(sizeof(bf16) * max_size * max_size);
+    bf16 *host_b = (bf16 *)malloc(sizeof(bf16) * max_size * max_size);
+    bf16 *host_c = (bf16 *)malloc(sizeof(bf16) * max_size * max_size);
+    bf16 *copy_host_c = (bf16 *)malloc(sizeof(bf16) * max_size * max_size);
+
+    Amtal::randomize_matrix(host_a, max_size * max_size);
+    Amtal::randomize_matrix(host_b, max_size * max_size);
+    memset(host_c, 0, sizeof(bf16) * max_size * max_size);
+    memset(copy_host_c, 0, sizeof(bf16) * max_size * max_size);
 
     bf16 *device_a = nullptr, *device_b = nullptr, *device_c = nullptr, *copy_device_c = nullptr;
-    CHECK_CUDA(cudaMalloc((void **)&device_a, sizeof(bf16) * N * N));
-    CHECK_CUDA(cudaMalloc((void **)&device_b, sizeof(bf16) * N * N));
-    CHECK_CUDA(cudaMalloc((void **)&device_c, sizeof(bf16) * N * N));
-    CHECK_CUDA(cudaMalloc((void **)&copy_device_c, sizeof(bf16) * N * N));
+    CHECK_CUDA(cudaMalloc((void **)&device_a, sizeof(bf16) * max_size * max_size));
+    CHECK_CUDA(cudaMalloc((void **)&device_b, sizeof(bf16) * max_size * max_size));
+    CHECK_CUDA(cudaMalloc((void **)&device_c, sizeof(bf16) * max_size * max_size));
+    CHECK_CUDA(cudaMalloc((void **)&copy_device_c, sizeof(bf16) * max_size * max_size));
 
-    CHECK_CUDA(cudaMemcpy(device_a, host_a, sizeof(bf16) * N * N, cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(device_b, host_b, sizeof(bf16) * N * N, cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(device_c, host_c, sizeof(bf16) * N * N, cudaMemcpyHostToDevice));
-    CHECK_CUDA(cudaMemcpy(copy_device_c, copy_host_c, sizeof(bf16) * N * N, cudaMemcpyHostToDevice));
+    CHECK_CUDA(cudaMemcpy(device_a, host_a, sizeof(bf16) * max_size * max_size, cudaMemcpyHostToDevice));
+    CHECK_CUDA(cudaMemcpy(device_b, host_b, sizeof(bf16) * max_size * max_size, cudaMemcpyHostToDevice));
+    CHECK_CUDA(cudaMemcpy(device_c, host_c, sizeof(bf16) * max_size * max_size, cudaMemcpyHostToDevice));
+    CHECK_CUDA(cudaMemcpy(copy_device_c, copy_host_c, sizeof(bf16) * max_size * max_size, cudaMemcpyHostToDevice));
 
     Amtal::warmupKernel<<<1024, 1024>>>();
     CHECK_CUDA(cudaDeviceSynchronize());
@@ -79,19 +81,31 @@ int main() {
     float elapsed_time = 0.0f;
     int trial_runs = 20;
 
-    cudaDeviceSynchronize();
+    int M, N, K;
 
-    for (int i = 0; i < trial_runs; ++i) {
-        cudaEventRecord(start, 0);
+    cuda_check(cudaDeviceSynchronize());
+    cuda_check(cudaGetLastError());
 
-        Amtal::run_cublas_sgemm_bf16(device_a, device_b, device_c, M, N, K, alpha, beta);
+    std::vector<long long> flops_per_run;
 
-        cudaEventRecord(stop, 0);
-        cudaEventSynchronize(stop);
+    for (int size : sizes) {
 
-        float run_time;
-        cudaEventElapsedTime(&run_time, start, stop);
-        elapsed_time += run_time;
+        M = N = K = size;
+
+        std::cout << "Dimensions (M = N = K) " << N << ", Alpha " << alpha << ", Beta " << beta << "\n";
+
+        for (int i = 0; i < trial_runs; ++i) {
+            cudaEventRecord(start, 0);
+    
+            Amtal::run_cublas_sgemm_bf16(device_a, device_b, device_c, M, N, K, alpha, beta);
+    
+            cudaEventRecord(stop, 0);
+            cudaEventSynchronize(stop);
+    
+            float run_time;
+            cudaEventElapsedTime(&run_time, start, stop);
+            elapsed_time += run_time;
+        }
     }
 
     elapsed_time /= trial_runs;
