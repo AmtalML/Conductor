@@ -152,7 +152,7 @@ CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o : /home/ec2-user/Conduc
     /usr/include/c++/11/bits/move.h \
     /usr/include/c++/11/type_traits \
     /usr/include/c++/11/initializer_list \
-    /home/ec2-user/Conductor/profiling/../Conductor/include/utils.cuh \
+    /home/ec2-user/Conductor/Conductor/include/utils.cuh \
     /usr/include/c++/11/cstdio \
     /usr/local/cuda/include/cuda.h \
     /usr/lib/gcc/x86_64-amazon-linux/11/include/stdint.h \
@@ -605,4 +605,5 @@ CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o : /home/ec2-user/Conduc
     /usr/include/c++/11/bits/random.tcc \
     /usr/include/c++/11/numeric \
     /usr/include/c++/11/bits/stl_numeric.h \
-    /usr/include/c++/11/bit
+    /usr/include/c++/11/bit \
+    /home/ec2-user/Conductor/Conductor/include/sgemm.cuh

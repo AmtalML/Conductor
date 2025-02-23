@@ -608,7 +608,8 @@ CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o: /home/ec2-user/Conduct
   /usr/include/c++/11/bits/random.tcc \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
-  /usr/include/c++/11/bit
+  /usr/include/c++/11/bit \
+  /home/ec2-user/Conductor/Conductor/include/sgemm.cuh
 
 
 /usr/include/c++/11/bit:
@@ -866,6 +867,8 @@ CMakeFiles/SGEMM_PERF.dir/profiling/profiling_sgemm.cu.o: /home/ec2-user/Conduct
 /usr/local/cuda/include/cuda/std/__type_traits/promote.h:
 
 /usr/local/cuda/include/cuda/std/__type_traits/is_const.h:
+
+/home/ec2-user/Conductor/Conductor/include/sgemm.cuh:
 
 /usr/local/cuda/include/surface_types.h:
 
