@@ -7,7 +7,7 @@ events:
       - "/opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.1.127-135.201.amzn2023.x86_64 - x86_64
+      The system is: Linux - 6.1.128-136.201.amzn2023.x86_64 - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -214,8 +214,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb"
-      binary: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb"
+      source: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh"
+      binary: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh"
     cmakeVariables:
       CMAKE_CUDA_ARCHITECTURES: "52"
       CMAKE_CXX_FLAGS: ""
@@ -225,12 +225,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb
+        Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh
         
-        Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f3ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f3ba.dir/build.make CMakeFiles/cmTC_0f3ba.dir/build
-        gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb'
-        Building CXX object CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ea85/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0ea85.dir/build.make CMakeFiles/cmTC_0ea85.dir/build
+        gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh'
+        Building CXX object CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -240,8 +240,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0f3ba.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/cc6Ej8sn.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0ea85.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/ccAqhVni.s
         GNU C++17 (GCC) version 11.4.1 20230605 (Red Hat 11.4.1-2) (x86_64-amazon-linux)
         	compiled by GNU C version 11.4.1 20230605 (Red Hat 11.4.1-2), GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
         
@@ -262,15 +262,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 1249ba69de2df746d1069868cd01a539
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/'
-         as -v --64 -o CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6Ej8sn.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/'
+         as -v --64 -o CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccAqhVni.s
         GNU assembler version 2.39 (x86_64-amazon-linux) using BFD version version 2.39-6.amzn2023.0.10
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_0f3ba
-        /opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f3ba.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0f3ba 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_0ea85
+        /opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ea85.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0ea85 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper
@@ -283,10 +283,10 @@ events:
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0f3ba' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0f3ba.'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccA5mTZB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0f3ba /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0f3ba' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0f3ba.'
-        gmake[1]: Leaving directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0ea85' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0ea85.'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvjPoz2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0ea85 /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0ea85' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0ea85.'
+        gmake[1]: Leaving directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh'
         
       exitCode: 0
   -
@@ -324,12 +324,12 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb]
+        ignore line: [Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh]
         ignore line: []
-        ignore line: [Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f3ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f3ba.dir/build.make CMakeFiles/cmTC_0f3ba.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1hhVmb']
-        ignore line: [Building CXX object CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ea85/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0ea85.dir/build.make CMakeFiles/cmTC_0ea85.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-P6tdTh']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -339,8 +339,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0f3ba.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/cc6Ej8sn.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0ea85.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/ccAqhVni.s]
         ignore line: [GNU C++17 (GCC) version 11.4.1 20230605 (Red Hat 11.4.1-2) (x86_64-amazon-linux)]
         ignore line: [	compiled by GNU C version 11.4.1 20230605 (Red Hat 11.4.1-2)  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
         ignore line: []
@@ -361,15 +361,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 1249ba69de2df746d1069868cd01a539]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6Ej8sn.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccAqhVni.s]
         ignore line: [GNU assembler version 2.39 (x86_64-amazon-linux) using BFD version version 2.39-6.amzn2023.0.10]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_0f3ba]
-        ignore line: [/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f3ba.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0f3ba ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_0ea85]
+        ignore line: [/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ea85.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0ea85 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper]
@@ -382,13 +382,13 @@ events:
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0f3ba' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0f3ba.']
-        link line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccA5mTZB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0f3ba /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0ea85' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_0ea85.']
+        link line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvjPoz2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0ea85 /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-amazon-linux/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccA5mTZB.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccvjPoz2.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -403,7 +403,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_0f3ba] ==> ignore
+          arg [cmTC_0ea85] ==> ignore
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o]
@@ -412,7 +412,7 @@ events:
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/usr/lib/gcc/x86_64-amazon-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-amazon-linux/11/../../..]
-          arg [CMakeFiles/cmTC_0f3ba.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_0ea85.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -445,8 +445,8 @@ events:
     checks:
       - "Detecting CUDA compiler ABI info"
     directories:
-      source: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK"
-      binary: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK"
+      source: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil"
+      binary: "/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil"
     cmakeVariables:
       CMAKE_CUDA_ARCHITECTURES: "52"
       CMAKE_CUDA_FLAGS: ""
@@ -457,12 +457,12 @@ events:
       variable: "CMAKE_CUDA_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK
+        Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil
         
-        Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f17a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f17a.dir/build.make CMakeFiles/cmTC_4f17a.dir/build
-        gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK'
-        Building CUDA object CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o
-        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52,code=[compute_52,sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o
+        Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_068b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_068b0.dir/build.make CMakeFiles/cmTC_068b0.dir/build
+        gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil'
+        Building CUDA object CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52,code=[compute_52,sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o
         Using built-in specs.
         COLLECT_GCC=gcc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -472,8 +472,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/include-fixed"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/../../../../x86_64-amazon-linux/include"
         #include "..." search starts here:
@@ -488,7 +488,7 @@ events:
         End of search list.
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.'
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.'
         Using built-in specs.
         COLLECT_GCC=gcc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -498,8 +498,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/include-fixed"
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/../../../../x86_64-amazon-linux/include"
         #include "..." search starts here:
@@ -514,7 +514,7 @@ events:
         End of search list.
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.'
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.'
         Using built-in specs.
         COLLECT_GCC=gcc
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -524,8 +524,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00001d82_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_4f17a.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/cceFyQP1.s
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00001b04_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_068b0.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/ccNuYT1v.s
         GNU C++17 (GCC) version 11.4.1 20230605 (Red Hat 11.4.1-2) (x86_64-amazon-linux)
         	compiled by GNU C version 11.4.1 20230605 (Red Hat 11.4.1-2), GMP version 6.2.1, MPFR version 4.1.0-p13, MPC version 1.2.1, isl version isl-0.18-GMP
         
@@ -547,15 +547,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 1249ba69de2df746d1069868cd01a539
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/'
-         as -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o /tmp/cceFyQP1.s
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/'
+         as -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o /tmp/ccNuYT1v.s
         GNU assembler version 2.39 (x86_64-amazon-linux) using BFD version version 2.39-6.amzn2023.0.10
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.'
-        Linking CUDA executable cmTC_4f17a
-        /opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f17a.dir/link.txt --verbose=1
-        /usr/bin/g++  -v CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -o cmTC_4f17a  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.'
+        Linking CUDA executable cmTC_068b0
+        /opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_068b0.dir/link.txt --verbose=1
+        /usr/bin/g++  -v CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -o cmTC_068b0  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"
         Using built-in specs.
         COLLECT_GCC=/usr/bin/g++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper
@@ -568,10 +568,10 @@ events:
         gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f17a' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4f17a.'
-         /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnUrx5N.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4f17a /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/local/cuda/targets/x86_64-linux/lib/stubs -L/usr/local/cuda/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f17a' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4f17a.'
-        gmake[1]: Leaving directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_068b0' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_068b0.'
+         /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWUFCPX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_068b0 /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/local/cuda/targets/x86_64-linux/lib/stubs -L/usr/local/cuda/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_068b0' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_068b0.'
+        gmake[1]: Leaving directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil'
         
       exitCode: 0
   -
@@ -611,12 +611,12 @@ events:
     message: |
       Parsed CUDA implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK]
+        ignore line: [Change Dir: /home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil]
         ignore line: []
-        ignore line: [Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f17a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4f17a.dir/build.make CMakeFiles/cmTC_4f17a.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-1vxMpK']
-        ignore line: [Building CUDA object CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o]
-        ignore line: [/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52 code=[compute_52 sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [Run Build Command(s):/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_068b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_068b0.dir/build.make CMakeFiles/cmTC_068b0.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/ec2-user/Conductor/build/CMakeFiles/CMakeScratch/TryCompile-jWxjil']
+        ignore line: [Building CUDA object CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_52 code=[compute_52 sm_52]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=gcc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -626,8 +626,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
-        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
+        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/include-fixed"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/../../../../x86_64-amazon-linux/include"]
         ignore line: [#include "..." search starts here:]
@@ -642,7 +642,7 @@ events:
         ignore line: [End of search list.]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001d82_00000000-7_CMakeCUDACompilerABI.cpp1.']
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001b04_00000000-7_CMakeCUDACompilerABI.cpp1.']
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=gcc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -652,8 +652,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
-        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
+        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -E -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=85 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/pytorch/lib/python3.12/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/include-fixed"]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-amazon-linux/11/../../../../x86_64-amazon-linux/include"]
         ignore line: [#include "..." search starts here:]
@@ -668,7 +668,7 @@ events:
         ignore line: [End of search list.]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001d82_00000000-5_CMakeCUDACompilerABI.cpp4.']
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=85' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_00001b04_00000000-5_CMakeCUDACompilerABI.cpp4.']
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=gcc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -678,8 +678,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00001d82_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_4f17a.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/cceFyQP1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/cc1plus -quiet -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00001b04_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_068b0.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/ccNuYT1v.s]
         ignore line: [GNU C++17 (GCC) version 11.4.1 20230605 (Red Hat 11.4.1-2) (x86_64-amazon-linux)]
         ignore line: [	compiled by GNU C version 11.4.1 20230605 (Red Hat 11.4.1-2)  GMP version 6.2.1  MPFR version 4.1.0-p13  MPC version 1.2.1  isl version isl-0.18-GMP]
         ignore line: []
@@ -701,15 +701,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 1249ba69de2df746d1069868cd01a539]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/']
-        ignore line: [ as -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o /tmp/cceFyQP1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/']
+        ignore line: [ as -v -I /usr/local/cuda/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o /tmp/ccNuYT1v.s]
         ignore line: [GNU assembler version 2.39 (x86_64-amazon-linux) using BFD version version 2.39-6.amzn2023.0.10]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.']
-        ignore line: [Linking CUDA executable cmTC_4f17a]
-        ignore line: [/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f17a.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -o cmTC_4f17a  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/usr/local/cuda/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.']
+        ignore line: [Linking CUDA executable cmTC_068b0]
+        ignore line: [/opt/pytorch/lib/python3.12/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_068b0.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -o cmTC_068b0  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/local/cuda/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda/targets/x86_64-linux/lib"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper]
@@ -722,13 +722,13 @@ events:
         ignore line: [gcc version 11.4.1 20230605 (Red Hat 11.4.1-2) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/11/:/usr/libexec/gcc/x86_64-amazon-linux/:/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-amazon-linux/11/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-amazon-linux/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f17a' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_4f17a.']
-        link line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnUrx5N.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4f17a /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/local/cuda/targets/x86_64-linux/lib/stubs -L/usr/local/cuda/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_068b0' '-L/usr/local/cuda/targets/x86_64-linux/lib/stubs' '-L/usr/local/cuda/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_068b0.']
+        link line: [ /usr/libexec/gcc/x86_64-amazon-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWUFCPX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_068b0 /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o -L/usr/local/cuda/targets/x86_64-linux/lib/stubs -L/usr/local/cuda/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-amazon-linux/11 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-amazon-linux/11/../../.. CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-amazon-linux/11/crtend.o /usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-amazon-linux/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-amazon-linux/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-amazon-linux/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccnUrx5N.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccWUFCPX.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -743,7 +743,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_4f17a] ==> ignore
+          arg [cmTC_068b0] ==> ignore
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-amazon-linux/11/crtbegin.o]
@@ -754,7 +754,7 @@ events:
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/usr/lib/gcc/x86_64-amazon-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-amazon-linux/11/../../..]
-          arg [CMakeFiles/cmTC_4f17a.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+          arg [CMakeFiles/cmTC_068b0.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
           arg [-lcudadevrt] ==> lib [cudadevrt]
           arg [-lcudart_static] ==> lib [cudart_static]
           arg [-lrt] ==> lib [rt]

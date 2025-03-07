@@ -1,5 +1,0 @@
-/home/ec2-user/Conductor/build/CMakeFiles/Conductor.dir
-/home/ec2-user/Conductor/build/CMakeFiles/ConductorExec.dir
-/home/ec2-user/Conductor/build/CMakeFiles/SGEMM_PERF.dir
-/home/ec2-user/Conductor/build/CMakeFiles/edit_cache.dir
-/home/ec2-user/Conductor/build/CMakeFiles/rebuild_cache.dir
