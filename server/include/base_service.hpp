@@ -37,7 +37,7 @@ public:
     virtual void add_listener(Service_Listener<V> *listener) = 0;
 
     // get all listeners on the service
-    virtual const vector<Service_Listener<V>*>& get_listeners() const = 0;
+    virtual const std::vector<Service_Listener<V>*>& get_listeners() const = 0;
 
 };
 
