@@ -19,6 +19,7 @@ endif()
 
 add_executable(batching_service server/batching_service.cpp)
 add_executable(conductor_server server/main.cpp)
+add_executable(client backends/client/client.cpp)
 
 target_link_libraries(batching_service PRIVATE Boost::filesystem Boost::system)
 target_link_libraries(conductor_server PRIVATE Boost::filesystem Boost::system)

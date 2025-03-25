@@ -50,4 +50,5 @@ else
 fi
 
 ./conductor_server
-./batching_service
+#./batching_service
+./client
